@@ -1,10 +1,8 @@
 import java.util.*;
-
-public class LinkedList {
-	
-	Node head;
-	
-	static class Node
+public class list
+{
+Node head;
+static class Node
 	{
 	   int data;
 	   Node next;
@@ -36,7 +34,7 @@ public class LinkedList {
         return list; 
 	}
    
-	 public static void printList(LinkedList list) 
+	 public static void display(LinkedList list) 
 	    { 
 	        Node currNode = list.head; 
 	        
@@ -51,7 +49,7 @@ public class LinkedList {
 	 
 	public static void main(String[] args)
 	{
-		LinkedList list = new LinkedList(); 
+		List list = new List(); 
 		
 		list = insert(list, 1); 
         list = insert(list, 2); 
@@ -62,7 +60,7 @@ public class LinkedList {
         list = insert(list, 7); 
         list = insert(list, 8); 
    
-        printList(list);
+        display(list);
 	}
 
 }
