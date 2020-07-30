@@ -6,21 +6,17 @@ public class search
     {  
         int data;  
         Node next;
-        
         public Node(int d) 
         {  
             data = d;  
             next = null;  
         }  
     }  
-    
      Node head = null;  
      Node tail = null;  
-    
-    public void add(int data)
+     public void add(int data)
     {  
         Node new_node = new Node(data);  
-        
         if(head == null) 
         {  
             head = new_node;  
@@ -59,16 +55,14 @@ public class search
         else  
              System.out.println("Element is not present in the list");  
     }  
+    public static void main(String[] args)
+    {  
+     search list = new search();  
   
-    public static void main(String[] args) {  
-  
-        search sList = new search();  
-  
-        sList.add(1);  
-        sList.add(2);  
-        sList.add(3);  
-        sList.add(4);  
- 
-        sList.search(2);  
+        list.add(1);  
+        list.add(2);  
+        list.add(3);  
+        list.add(4);  
+        list.search(2);  
     }
     }  
