@@ -32,9 +32,10 @@ public class search
     {  
         Node current = head;  
         int i = 1;  
-        boolean flag = false;  
+        int flag;  
        
-        if(head==null) {  
+        if(head==null) 
+        {  
             System.out.println("List is empty");  
         }  
         else 
@@ -43,15 +44,15 @@ public class search
             {   
                 if(current.data==data) 
                 {  
-                    flag = true;  
+                    flag = 1;  
                     break;  
                 }  
                 i++;  
                 current = current.next;  
             }  
         }  
-        if(flag)  
-             System.out.println("Element is present in the list at the position : " + i);  
+        if(flag==1)  
+             System.out.println("Element is present" + i);  
         else  
              System.out.println("Element is not present in the list");  
     }  
