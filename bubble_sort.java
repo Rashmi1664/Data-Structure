@@ -6,6 +6,7 @@ int i,n,j,temp;
 Scanner k=new Scanner(System.in);
 n=k.nextInt();
 int a[]=new int[n];
+System.out.println("Numbers before sorting");
 for(i=0;i<n;i++)
 {
 a[i]=k.nextInt();
@@ -24,7 +25,7 @@ a[j+1]=temp;
 }
 for(i=0;i<n;i++)
 {
-System.out.println(a[i]+" ");
+System.out.println("After sorting array"+a[i]);
 }
 }
 }
